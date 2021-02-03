@@ -1,7 +1,16 @@
+import Header from './components/Header'
+
 function App() {
+// const name = 'Space Pharoh'
+  // const x = true
+
   return (
-    <div className="App">
-Op<h1></h1>
+    <div className="container">
+      <Header title='Tracker'/>
+
+    {/* <h1> Does {name} own space </h1> */}
+    {/* <h1> {x ? 'Yes' : 'No'} </h1> */}
+{/* //    conditional (ternary) operator  */}
     </div>
   );
 }
