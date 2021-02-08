@@ -15,12 +15,18 @@ const Header = ({title}) => {
         setCounter(counter + 1);
     }
 
+    
+    const subtraction = () => {
+        setCounter(counter - 1);
+    }
+
     return (
         <header className='header'>
             <h1>{title}</h1>
             <Button color='green' text='Add' onClick={onClick} />
 
             <Button onClick = {addition}>Add it</Button>
+            <Button onClick = {subtraction}>Subtract it</Button>
             <p>{counter}</p>
         </header>
     )
