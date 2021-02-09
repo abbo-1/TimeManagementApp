@@ -11,14 +11,19 @@ const Header = ({title}) => {
 
     const [counter, setCounter] = useState(0);
 
+
     const addition = () => {
         setCounter(counter + 1);
     }
-
     
     const subtraction = () => {
         setCounter(counter - 1);
     }
+
+    const multiply = () => {
+        setCounter(counter * 2)
+    }
+
 
     return (
         <header className='header'>
@@ -27,6 +32,8 @@ const Header = ({title}) => {
 
             <Button onClick = {addition}>Add it</Button>
             <Button onClick = {subtraction}>Subtract it</Button>
+            <Button onClick = {multiply}>Multiply it</Button>
+
             <p>{counter}</p>
         </header>
     )
