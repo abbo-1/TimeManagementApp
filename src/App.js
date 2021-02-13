@@ -12,7 +12,8 @@ function App() {
 
     {/* <h1> Does {name} own space </h1> */}
     {/* <h1> {x ? 'Yes' : 'No'} </h1> */}
-{/* //    conditional (ternary) operator  */}
+    {/* conditional (ternary) operator  */}
+    
     </div>
   );
 }
