@@ -31,6 +31,10 @@ const Header = ({title}) => {
         setCounter(counter * 2)
     }
 
+    const subtractAdd = () => {
+        setCounter(counter - 1 + 2)
+    }
+
     return (
         <header className='header'>
 
@@ -45,9 +49,8 @@ const Header = ({title}) => {
             <Button onClick = {multiply}>Multiply it</Button>
             Divide
             <Button onClick = {divide}>Divide it</Button>
-            Multiplay x 2
-            <Button onClick - {multiply2}>Multply 2</Button>
-
+            Multiply Again
+            <Button onClick = {multiply2}>Multply </Button>
 
             <p>{counter}</p>
 
