@@ -35,6 +35,22 @@ const Header = ({title}) => {
         setCounter(counter - 1 + 2)
     }
 
+    const multiply2 = () => {
+        setCounter(counter * 2)
+    }
+
+    const feeeea = () => {
+        setCounter(counter - 1 + 9)
+    }
+
+    const muldddwtiply2 = () => {
+        setCounter(counter * 6)
+    }
+
+    const wdwaa = () => {
+        setCounter(counter - 3 + 2)
+    }
+
     return (
         <header className='header'>
 
