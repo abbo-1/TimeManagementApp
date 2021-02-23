@@ -39,18 +39,6 @@ const Header = ({title}) => {
         setCounter(counter * 2)
     }
 
-    const feeeea = () => {
-        setCounter(counter - 1 + 9)
-    }
-
-    const muldddwtiply2 = () => {
-        setCounter(counter * 6)
-    }
-
-    const wdwaa = () => {
-        setCounter(counter - 3 + 2)
-    }
-
     return (
         <header className='header'>
 
@@ -67,6 +55,8 @@ const Header = ({title}) => {
             <Button onClick = {divide}>Divide it</Button>
             Multiply Again
             <Button onClick = {multiply2}>Multply </Button>
+
+            <Button onClick ={clear}>Clear</Button>
 
             <p>{counter}</p>
 
