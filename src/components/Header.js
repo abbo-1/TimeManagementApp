@@ -39,6 +39,10 @@ const Header = ({title}) => {
         setCounter(counter * 2)
     }
 
+    const multiply45 = () => {
+        setCounter(counter * 45)
+    }
+
     return (
         <header className='header'>
 
