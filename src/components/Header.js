@@ -43,6 +43,14 @@ const Header = ({title}) => {
         setCounter(counter * 45)
     }
 
+    const add100 = () => {
+        setCounter(counter + 100)
+    }
+
+    const divide5 = () => {
+        setCounter(counter / 5)
+    }
+
     return (
         <header className='header'>
 
