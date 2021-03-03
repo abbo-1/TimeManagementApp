@@ -44,6 +44,10 @@ const Header = ({title}) => {
         setCounter(counter + 2 - 1)
     }
 
+    const minusmouse = () => {
+        setCounter(counter + 85)
+    }
+
 
     return (
         <header className='header'>
