@@ -19,50 +19,13 @@ const Header = ({title}) => {
         setCounter(counter - 1);
     }
 
-    const multiply = () => {
+    const multiply2 = () => {
         setCounter(counter * 2)
     }
 
-    const divide = () => {
+    const divide2 = () => {
         setCounter(counter / 2)
     }
-
-    const multiply2 = () => {
-        setCounter(counter * 2)
-    }
-
-    const subtractAdd = () => {
-        setCounter(counter - 1 + 2)
-    }
-
-    const multiply2 = () => {
-        setCounter(counter * 2)
-    }
-
-    
-    const addsubtract = () => {
-        setCounter(counter + 2 - 1)
-    }
-
-    const minusmouse = () => {
-        setCounter(counter + 85)
-    }
-
-    const set = () => {
-        setCounter(counter * 2 + 1)
-    }
-
-    
-    const saere = () => {
-        setCounter(counter * 2 - 1)
-    }
-
-    const minus85 = () => {
-        setCounter(counter - 85)
-    }
-
-
-
 
     return (
         <header className='header'>
@@ -75,9 +38,9 @@ const Header = ({title}) => {
             Subtract
             <Button onClick = {subtraction}>Subtract it</Button>
             Multiply
-            <Button onClick = {multiply}>Multiply it</Button>
+            <Button onClick = {multiply2}>Multiply it</Button>
             Divide
-            <Button onClick = {divide}>Divide it</Button>
+            <Button onClick = {divide2}>Divide it</Button>
             Multiply Again
             <Button onClick = {multiply2}>Multply </Button>
             <Button onClick = {addsubtract}>Add subtract </Button>

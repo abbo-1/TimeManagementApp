@@ -7,7 +7,7 @@ const tasks = [
     },
     {
         id: 1,
-        text: 'Bath the dog',
+        text: 'Wash the dog',
         day: 'Tuesday',
         reminder: true,
     },
