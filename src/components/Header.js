@@ -48,6 +48,21 @@ const Header = ({title}) => {
         setCounter(counter + 85)
     }
 
+    const set = () => {
+        setCounter(counter * 2 + 1)
+    }
+
+    
+    const saere = () => {
+        setCounter(counter * 2 - 1)
+    }
+
+    const minus85 = () => {
+        setCounter(counter - 85)
+    }
+
+
+
 
     return (
         <header className='header'>
