@@ -4,7 +4,7 @@ import React from "react"
 const Header = ({title}) => {
 
     const onClick = () => {
-        console.log('Bananas')
+        console.log('Apples')
     }
 
     const {useState} = React;
@@ -42,8 +42,6 @@ const Header = ({title}) => {
             Divide
             <Button onClick = {divide2}>Divide it</Button>
             Multiply Again
-            <Button onClick = {multiply2}>Multply </Button>
-            <Button onClick = {addsubtract}>Add subtract </Button>
 
             <Button onClick ={clear}>Clear</Button>
 
