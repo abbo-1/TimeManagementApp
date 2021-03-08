@@ -1,7 +1,6 @@
 import Header from './components/Header'
 import Tasks from './components/Tasks'
 
-import PropTypes from 'prop-types'
 
 function App() {
 // const name = 'Space Pharoh'
@@ -20,9 +19,7 @@ function App() {
   );
 
   
-Header.propTypes = {
-  color: PropTypes.string,
-}
+
 }
 
 export default App;

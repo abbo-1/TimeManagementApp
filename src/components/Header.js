@@ -32,18 +32,10 @@ const Header = ({title}) => {
 
             <h1>{title}</h1>
 
-            <Button color='green' text='Add' onClick={onClick} />
-            Add
-            <Button onClick = {addition}>Add it</Button>
-            Subtract
-            <Button onClick = {subtraction}>Subtract it</Button>
-            Multiply
-            <Button onClick = {multiply2}>Multiply it</Button>
-            Divide
-            <Button onClick = {divide2}>Divide it</Button>
-            Multiply Again
-
-            <Button onClick ={clear}>Clear</Button>
+            <Button color='green' text='Add 1' onClick = {addition}></Button>
+            <Button color='red' text='Subtract 1' onClick = {subtraction}></Button>
+            <Button color='blue' text='Multiply by 2' onClick = {multiply2}></Button>
+            <Button color='purple' text='Divide by 2' onClick = {divide2}></Button>
 
             <p>{counter}</p>
 
