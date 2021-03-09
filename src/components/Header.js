@@ -18,15 +18,7 @@ const Header = ({title}) => {
     const subtraction = () => {
         setCounter(counter - 1);
     }
-
-    const multiply2 = () => {
-        setCounter(counter * 2)
-    }
-
-    const divide2 = () => {
-        setCounter(counter / 2)
-    }
-
+    
     return (
         <header className='header'>
 
@@ -34,8 +26,6 @@ const Header = ({title}) => {
 
             <Button color='green' text='Add 1' onClick = {addition}></Button>
             <Button color='red' text='Subtract 1' onClick = {subtraction}></Button>
-            <Button color='blue' text='Multiply by 2' onClick = {multiply2}></Button>
-            <Button color='purple' text='Divide by 2' onClick = {divide2}></Button>
 
             <p>{counter}</p>
 
