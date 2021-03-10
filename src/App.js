@@ -36,7 +36,13 @@ function App() {
           text: 'Give Dog a Bath',
           day: 'Saturday',
           reminder: true,
-      }
+      },
+      {
+        id: 6,
+        text: 'Bake Bread',
+        day: 'Sunday',
+        reminder: true,
+    }
       ]
   )
 
