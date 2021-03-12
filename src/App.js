@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Tasks from './components/Tasks'
+import AddTask from './components/AddTask'
 import { useState } from 'react'
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
       },
       {
           id: 5,
-          text: 'Give Dog a Bath',
+          text: 'Clean the House',
           day: 'Saturday',
           reminder: true,
       },
@@ -55,12 +56,17 @@ function App() {
   // REMINDER
 
   const toggleReminder = (id) => {
-    console.log(id)
+    console.log('reminder')
+    setTasks(tasks.map((task) => 
+    task.id === id ? { ...task, reminder : !task.reminder} : task
+    )
+    )
   }
 
   return (
     <div className="container">
       <Header title='Tracker'/>
+      <AddTask/>
       {tasks.length > 0 ? (
       <Tasks 
       tasks={tasks} 
@@ -68,6 +74,7 @@ function App() {
       onToggle={toggleReminder} />
       ) : ( 'No Tasks To Show'
       )}
+
 
     {/* <h1> Does {name} own space </h1> */}
     {/* <h1> {x ? 'Yes' : 'No'} </h1> */}
