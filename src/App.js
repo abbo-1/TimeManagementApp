@@ -28,7 +28,7 @@ function App() {
       },
       {
           id: 4,
-          text: 'Grocery Shopping',
+          text: 'Wash Car',
           day: 'Friday',
           reminder: true,
       },
@@ -63,10 +63,15 @@ function App() {
     )
   }
 
+  //ADD TASKS
+  const addTask = (task) => {
+    console.log(task)
+  }
+
   return (
     <div className="container">
       <Header title='Tracker'/>
-      <AddTask/>
+      <AddTask onAdd={addTask}/>
       {tasks.length > 0 ? (
       <Tasks 
       tasks={tasks} 
