@@ -6,6 +6,7 @@ import { useState } from 'react'
 function App() {
 // const name = 'Space Pharoh'
   // const x = true
+  const [showAddTask, setShowAddTask] = useState(false)
 
   const [tasks, setTasks] = useState([
       {
@@ -72,8 +73,8 @@ function App() {
 
   return (
     <div className="container">
-      <Header title='Tracker'/>
-      <AddTask onAdd={addTask}/>
+      <Header onAdd={() => setShowAddTask(!showAddTask)} title='Tracker'/>
+      {showAddTask && <AddTask onAdd={addTask}/>}
       {tasks.length > 0 ? (
       <Tasks 
       tasks={tasks} 

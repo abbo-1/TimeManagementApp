@@ -1,11 +1,7 @@
 import Button from './Button'
 import React from "react"
 
-const Header = ({title}) => {
-
-    const onClick = () => {
-        console.log('Apples')
-    }
+const Header = ({title, onAdd}) => {
 
     const {useState} = React;
 
@@ -18,16 +14,17 @@ const Header = ({title}) => {
     const subtraction = () => {
         setCounter(counter - 1);
     }
-    
+
     return (
         <header className='header'>
 
             <h1>{title}</h1>
-
+            <Button color='green' text='Add' onClick = {onAdd}></Button>
+{/* 
             <Button color='green' text='Add 1' onClick = {addition}></Button>
-            <Button color='red' text='Subtract 1' onClick = {subtraction}></Button>
+            <Button color='red' text='Subtract 1' onClick = {subtraction}></Button> */}
 
-            <p>{counter}</p>
+            {/* <p>{counter}</p> */}
 
         </header>
     )
